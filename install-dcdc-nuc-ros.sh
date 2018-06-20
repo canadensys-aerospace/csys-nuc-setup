@@ -6,7 +6,8 @@ if [[ $EUID -eq 0 ]]; then
 	exit 1
 fi
 
-sudo apt-get install libusb-dev
+sudo apt-get update
+sudo apt-get -y install libusb-dev
 
 source ~/catkin_ws/devel/setup.bash
 

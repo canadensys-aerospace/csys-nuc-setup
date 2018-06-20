@@ -6,7 +6,8 @@ if [[ $EUID -eq 0 ]]; then
 	exit 1
 fi
 
-sudo apt-get install ros-kinetic-serial
+sudo apt-get update
+sudo apt-get -y install ros-kinetic-serial
 
 source ~/catkin_ws/devel/setup.bash
 
