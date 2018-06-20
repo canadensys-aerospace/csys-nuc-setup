@@ -11,6 +11,8 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 sudo apt-get update
 sudo apt-get -y install ros-kinetic-desktop-full python-rosinstall python-rosinstall-generator python-wstool build-essential
 
+sudo cp start-ros.sh /usr/bin
+
 echo -e "\n# source ROS setup script\nsource /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 source /opt/ros/kinetic/setup.bash
 
@@ -20,5 +22,3 @@ rosdep update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin_make
-
-sudo cp start-ros.sh /usr/bin

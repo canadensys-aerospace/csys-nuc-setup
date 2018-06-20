@@ -9,6 +9,8 @@ fi
 sudo apt-get update
 sudo apt-get -y install libusb-dev
 
+sudo cp dcdc-nuc.rules /etc/udev/rules.d
+
 source ~/catkin_ws/devel/setup.bash
 
 cd ~/catkin_ws/src
@@ -16,5 +18,3 @@ git clone https://github.com/canadensys-aerospace/csys-ros-dcdc-nuc
 
 cd ~/catkin_ws
 catkin_make
-
-sudo cp dcdc-nuc.rules /etc/udev/rules.d
