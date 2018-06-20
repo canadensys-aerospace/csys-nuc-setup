@@ -1,0 +1,2 @@
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="CSYS-RS232-M1", MODE:="0666", SYMLINK+="ttyUSB-CSYS-M1"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="CSYS-RS232-M2", MODE:="0666", SYMLINK+="ttyUSB-CSYS-M2"
