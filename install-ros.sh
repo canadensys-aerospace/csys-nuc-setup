@@ -22,3 +22,5 @@ rosdep update
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws
 catkin_make
+
+echo -e "\n# source local workspace setup script\nsource ~/catkin_ws/devel/setup.bash\n" >> ~/.bashrc
